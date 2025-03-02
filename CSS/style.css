@@ -117,3 +117,39 @@ nav ul li a {
     border-radius: 20px;
     cursor: pointer;
 }
+
+
+        /* Conteneur principal */
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            background: #f5f5f5;
+            padding: 20px 0;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        /* Bande contenant les images */
+        .slider {
+            display: flex;
+            width: 200%; /* Pour l'effet infini */
+            animation: slide 20s linear infinite;
+        }
+
+        /* Images du slider */
+        .slider img {
+            width: 200px; /* Taille de chaque image */
+            height: 120px;
+            margin: 0 10px;
+            object-fit: cover;
+        }
+
+        /* Animation du slider */
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
