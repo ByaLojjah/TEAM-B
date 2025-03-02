@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #1e1e1e;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+}
+.submenu li {
+    padding: 10px;
+}
+.submenu li a {
+    color: #1e1e1e;
+    text-decoration: none;
+    display: block;
+}
+.submenu li a:hover {
+    background-color: #f5f5f5;
+}
+.auth-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.sign-up {
+    color: #1e1e1e;
+}
+.log-in {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+.hero {
+    padding: 60px 20px;
+}
+.hero h1 {
+    font-family: 'font serif 4 Regular';
+    font-size: 62px;
+    font-weight: 74.4px;
+    color: #0D0C22;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-family: 'Mona Sans Extra Light';
+    font-size: 18px;
+    font-weight: 26px;
+    color: #0D0C22;
+    margin-bottom: 20px;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 30px;
+    width: 50%;
+    margin: auto;
+}
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+}
+.search-btn {
+    background: #e91e63;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.trending {
+    margin-top: 20px;
+}
+.trending button {
+    background: #f5f5f5;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
