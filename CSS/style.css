@@ -82,6 +82,48 @@ body {
     align-items: center;
     justify-content: center;
 }
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-track {
+    display: flex;
+    width: calc(250px * 24);
+    animation: scroll 40s linear infinite;
+  }
+
+  .slide {
+    width: 250px;
+    margin-right: 10px;
+  }
+
+  .slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-250px * 12)); 
+    }
+  }
+  .sco{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .scolling img{
+    height: 50px;
+    width: 100px;
+  }
+  .scro p{
+    margin-top: -50px;
+  }
 
 
 header{
