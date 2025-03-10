@@ -13,7 +13,11 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 98%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -35,30 +39,6 @@ nav ul li a {
     text-decoration: none;
     color: #1e1e1e;
     font-weight: bold;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 10px 0;
-    min-width: 150px;
-}
-
-.submenu li {
-    padding: 10px;
-}
-
-.submenu li a {
-    color: #1e1e1e;
-    text-decoration: none;
-    display: block;
-}
-
-.submenu li a:hover {
-    background-color: #f5f5f5;
 }
 
 .auth-buttons a {
@@ -183,7 +163,6 @@ nav ul li a {
 .slider {
     display: flex;
     width: 200%;
-
     animation: slide 20s linear infinite;
 }
 
@@ -221,4 +200,65 @@ nav ul li a {
     to {
         transform: translateX(-50%);
     }
+}
+/* Footer */
+.footer {
+    background: #f8f8f8;
+    padding: 20px 40px;
+    border-top: 1px solid #ddd;
+}
+
+/* Conteneur principal du footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a0005e;
+}
+
+/* Liste des liens */
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Réseaux sociaux */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Bas du footer */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
 }
